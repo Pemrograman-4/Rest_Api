@@ -13,8 +13,8 @@ module.exports = {
     },
     suksesResult: (data) => {
       return {
-        sukses: true,
-        msg: 'Berhasil Mendapatkan Data',
+        status: true,
+        message: 'Berhasil Mendapatkan Data',
         result: data
       }
     },
@@ -29,7 +29,7 @@ module.exports = {
       return {
         sukses: false,
         msg: 'Gagal Mendapatkan Data',
-        data: null
+        data: []
       }
     }
   }
