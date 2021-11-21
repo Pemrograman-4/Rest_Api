@@ -12,4 +12,7 @@ router.get("/get", (req, res) => {
     .catch((err) => res.json(err));
 });
 
+router.delete("/delete/:id", Controller.delete);
+router.put("/update/:id", Controller.update);
+
 module.exports = router;
